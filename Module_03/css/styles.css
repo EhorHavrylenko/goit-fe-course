@@ -139,10 +139,11 @@ img{
 .load_more{
     text-align: center;
     margin-top: 52px;
+    margin-bottom: 70px;
 }
 
 .load_more_button{
-    box-sizing: border-box;
+    border: 1px solid #0c0c0c;
     width: 164px;
     height: 60px;
     font-family: Playfair Display, Arial, Helvetica, sans-serif;
