@@ -38,12 +38,12 @@ body{
 .wrapper{
     width: 901px;
     margin: 0 auto;
+    padding-top: 77px;
+    padding-bottom: 70px;
 }
 
 /* MENU */
-.menu{
-   margin-top: 77px; 
-}
+
 
 .menu_item{
     text-align: center;
@@ -83,11 +83,14 @@ img{
     height: 280px;
 }
 
+.row{
+    width: 421px;
+    display: inline-block;
+}
+
 /* first_row_left */
 .first_row_left{
     margin-top: 103px;
-    width: 421px;
-    display: inline-block;
     margin-right: 55px;
 }
 
@@ -117,16 +120,13 @@ img{
 
 .first_row_right{
     margin-top: 103px;
-    width: 421px;
-    display: inline-block;
+    margin-right: 0px;
 }
 
 /* second_row_left */
 
 .second_row_left{
     margin-top: 130px;
-    display: inline-block;
-    width: 421px;
     margin-right: 55px;
 }
 
@@ -134,25 +134,23 @@ img{
 
 .second_row_right{
     margin-top: 130px;
-    display: inline-block;
-    width: 421px;
+    margin-right: 0px;
 }
 
 /* third_row_left */
 
 .third_row_left{
     margin-top: 136px;
-    display: inline-block;
-    width: 421px;
-    margin-right: 55px;    
+    margin-right: 55px; 
+    margin-bottom: 0px;   
 }
 
 /* third_row_right */
 
 .third_row_right{
     margin-top: 136px;
-    display: inline-block;
-    width: 421px;
+    margin-right: 0px;
+    margin-bottom: 0px;
 }
 
 /* load more */
@@ -160,7 +158,6 @@ img{
 .load_more{
     text-align: center;
     margin-top: 52px;
-    margin-bottom: 70px;
 }
 
 .load_more_button{
