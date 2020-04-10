@@ -1,0 +1,263 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.wrapper{
+    width: 1110px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header{
+    width: 1100px;
+    margin: 0 auto;
+    padding-top: 36px;
+}
+
+.logo { 
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 300;
+    color: #555252;
+    text-transform: uppercase;
+    float: left;
+}
+
+.logo::first-letter{
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 600;
+    color: #4ec6ab;
+    text-transform: uppercase;
+    
+}
+
+.menu{
+    width: 490px;
+    float: right;
+    padding-top: 7px;
+}
+
+.menu-list{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.menu-list li{
+    float: left;
+}
+
+.menu-list-item{
+    font-size: 14px;
+    font-family: Roboto, Arial, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 11px;
+    color: #0f0101;   
+}
+
+
+.li-home{
+    margin-right: 34px;
+    color: #4ec6ab;
+}
+
+.li-about-us{
+    margin-right: 38px;
+}
+
+.li-page{
+    margin-right: 30px;
+}
+
+.li-shop{
+    margin-right: 28px;
+}
+
+.li-blog{
+    margin-right: 35px;
+}
+
+/* FEAUTURED SECTION */
+
+.featured-products{
+    height: auto;
+    overflow: hidden;
+    padding-top: 111px;
+    padding-bottom: 105px;
+}
+
+.section-heading-name{
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 48px;
+    color: #515151;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section-heading-name::after{
+    display: block;
+    width: 164px;
+    height: 7px;
+    background-color: #4ec6ab;
+    content: '';
+    margin: 0 auto;
+    margin-top: 32px;
+}
+
+/* PRODUCTS LIST */
+
+.products-list{
+    padding-top: 92px;
+    height: auto;
+    overflow: hidden;
+}
+
+.products-list-item{
+    width: 255px;
+    height: 322px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    float: left;
+}
+
+.products-list-button{
+    width: 255px;
+    display: block; 
+    overflow: hidden;   
+    height: auto;
+
+}
+
+.products-img, img{
+    display:block;
+    max-width: 100%;
+    height: auto;
+}
+
+.products-list-button-text{
+    width: 255px;
+    height: 40px;
+    background: linear-gradient(to right, 
+        #323232 0%, #323232 80%,
+        #8c8c8c 80%, hsl(0, 0%, 55%) 100%);     
+    padding: 10px;
+    height: auto;
+    overflow: hidden;
+
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.products-name{
+    float: left;
+}
+    
+.price{
+    float: right;
+}
+
+.products-list-button:hover .products-list-button-text {
+    background: #4ec6ab;
+}
+
+.products-list-item:nth-child(4n+4) {
+    margin-right: 0px;
+}
+
+.products-list-item:nth-last-child(-n+4){
+    margin-bottom: 0px;
+}
+
+/* LATEST NEWS */
+
+.latest-news-list {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.latest-news{
+    padding-top: 81px;
+    padding-bottom: 82px;
+    height: auto;
+    overflow: hidden;
+}
+
+.latest-news-headline{
+    font-family: Open Sans, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    color: #555252;
+    margin-top: 11px;
+}
+
+.latest-news-headline::after{
+    display: block;
+    width: 136px;
+    height: 3px;
+    background-color: #4ec6ab;
+    content: '';
+    margin-top: 11px;
+}
+
+.latest-news-text{
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #555252;
+    margin-top: 23px;
+    margin-bottom: 12px;
+}
+
+.button {
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 159px;
+    height: 51px;
+    background-color:#4ec6ab;
+    font-family: Open Sans, sans-serif;
+    font: 16px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 16px 0px;
+}
+
+.latest-news-list-item{
+    width: 350px;
+    float: left;
+    margin-right: 30px;
+}
+
+.latest-news-list-item:last-child{
+    margin-right: 0px;
+}
