@@ -53,39 +53,51 @@ html {
 
 .menu-list{
     list-style: none;
+    float: right;
+}
+
+.menu-list-item{
+    list-style: none;
     font-family: Roboto, Arial, Helvetica, sans-serif;
     font-size: 14px;
+    color: #000;
     text-transform: uppercase;
     font-weight: 700;
     float: right;
     padding-top: 10px;
 }
 
-.menu-list-item{
+.menu-list > li{
     float: left;
 }
 
-.menu-list-item:nth-child(1){
-    color: #4ec6ab;
-    margin-right: 34px;
+.menu-list-item{
+    text-decoration: none;
 }
 
-.menu-list-item:nth-child(2){
+.home{
+    margin-right: 34px;
+} 
+
+.about{
     margin-right: 38px;
 }
 
-.menu-list-item:nth-child(3){
+.page{
     margin-right: 30px;
 }
 
-.menu-list-item:nth-child(4){
+.shop{
     margin-right: 27px;
 }
 
-.menu-list-item:nth-child(5){
+.blog{
     margin-right: 35px;
 }
 
+.menu-list-item:hover{
+    color: #1abc9c;
+}
 
 /* SLIDER SECTION */
 
