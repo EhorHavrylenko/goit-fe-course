@@ -255,15 +255,16 @@ html {
 }
 
 
-.hover-icons-list{
+.hover-icons-list-item{
     width: 166px;
     height: 107px;
     position: absolute;
-    top: 90px;
-    left: 45px; 
-    /* border: 1px solid red; */
-}
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
 
+}
 
 .hover-icons{
     width: 50px;
@@ -271,9 +272,6 @@ html {
     border: 1px solid #fff;
     background-repeat: no-repeat;
     background-position: center;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    display: none;
     float: left;
 }
 
@@ -283,25 +281,25 @@ html {
 
 .hover-icons:nth-child(2){
     border: none;
+    margin: 0px 7px 7px 9px ;
     background-color: #1abc9c;
     background-image: url(../img/icon-2.png);
 }
 
 .hover-icons:nth-child(3){
-    margin-right: none;
     background-image: url(../img/icon-3.png);
 }
 
 .hover-icons:nth-child(4){
-    margin-bottom: none;
     background-image: url(../img/icon-5.png);
     background-color: rgb(53, 51, 51);
-    width: 166px;
+    width: 100%;
 }
 
-.new_collection__item:hover .hover-icons{
+.new_collection__item:hover .hover-icons-list-item{
     display: block;
 }
+
 
 .new_collection__item:hover .hover-icons-list {
       position: absolute;
