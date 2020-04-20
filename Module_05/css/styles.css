@@ -20,7 +20,7 @@ html {
 }
 
 .wrapper{
-    padding-top: 50px;
+    padding-top: 50px;  
     
 }
 /* HEADER */
@@ -105,42 +105,38 @@ html {
     width: 100%;   
 }
 
-.button{
-    position: relative;
-    top: 300px;
-
-}
 
 .slider__btn{
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    border: none;
+    top: calc(100% - 61%);
     display: inline-block;
     width: 104px;
     height: 104px;
     background-color: #4ec6ab;
     cursor: pointer;
     z-index: 10;
+    border: none;
 }
 
 .slider__btn:nth-of-type(1){
     background-image: url(../img/btn-prev.png);
-    opacity: 0.5;
-    left: 270px;
+    left: calc(100% - 83%);
     
 }
 
 .slider__btn:nth-of-type(2){
-    right: 270px;
     background-image: url(../img/btn-next.png);
+    right: calc(100% - 83%);
+}
+
+.slider__btn:hover{
+    opacity: 0.5;
 }
 
 .slider-scroll{
     margin: 0;
     padding: 0;
     list-style: none;
-    /* position: relative; */
 }
 
 .slider__item{
@@ -148,8 +144,8 @@ html {
 }
 
 .slider-img{
-    /* position: absolute; */
     display: block;
+    filter: brightness(50%);
 }
 
 .slider__heading{
@@ -158,8 +154,8 @@ html {
     color:#fff;
     text-transform: uppercase;
     position: absolute;
-    top: 220px;
-    left: 460px;
+    top: calc(100% - 65%);
+    left: calc(100vw - 73%);
 }
 
 .slider__text{
@@ -169,8 +165,8 @@ html {
     font-weight: 100;
     color:#fff;
     text-transform: uppercase;
-    top: 317px;
-    left: 460px;
+    top: calc(100% - 53%);
+    left: calc(100vw - 73%);
 }
 
 .slider::after{
@@ -264,6 +260,16 @@ html {
     );
 }
 
+.hover-icons-list{
+    position: absolute;
+    width: calc(100% - 20px);
+    height: calc(100% - 60px);
+    z-index: 10;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    display: none;
+}
 
 .hover-icons-list-item{
     width: 166px;
@@ -272,7 +278,10 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: none;
+}
+
+.new_collection__item:hover .hover-icons-list{
+    display: block;
 }
 
 .hover-icons{
@@ -284,14 +293,17 @@ html {
     float: left;
 }
 
+.hover-icons:not(:nth-child(4)):hover{
+    border: none;
+    background-color: #1abc9c;
+}
+
 .hover-icons:nth-child(1){
     background-image: url(../img/icon-1.png);
 }
 
 .hover-icons:nth-child(2){
-    border: none;
     margin: 0px 7px 7px 9px ;
-    background-color: #1abc9c;
     background-image: url(../img/icon-2.png);
 }
 
@@ -305,19 +317,10 @@ html {
     width: 100%;
 }
 
-.new_collection__item:hover .hover-icons-list-item{
+.new_collection__item:hover .hover-icons{
     display: block;
 }
-
-
-.new_collection__item:hover .hover-icons-list {
-      position: absolute;
-      width: calc(100% - 20px);
-      height: calc(100% - 60px);
-      top: 10px;
-      left: 10px;
-      background-color: rgba(0, 0, 0, 0.6); 
-  }
+  
 
  .new_collection__item:hover:after{
      content: '';
