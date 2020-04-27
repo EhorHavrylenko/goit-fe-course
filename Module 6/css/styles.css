@@ -58,11 +58,7 @@ html {
    transition: color 200ms linear; 
 }
 
-.item-about{
-    transition: color 200ms linear;
-}
-
-.item-about:hover{
+.header__menu-item:hover{
     color: #f38181;
 }
 
@@ -76,6 +72,7 @@ html {
     transition: width, opacity 200ms linear;
     opacity: 0;
 }
+
 
 .header__menu-item:hover:nth-of-type(1)::after{
     width: 50px;
