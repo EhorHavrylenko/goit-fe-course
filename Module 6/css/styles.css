@@ -48,7 +48,6 @@ html {
 
 }
 
-
 .header__menu-item{
    color: #95e1d3;
    font-family: Montserrat, Arial, Helvetica, sans-serif;
@@ -67,7 +66,7 @@ html {
     color: #f38181;
 }
 
-.item-about::after{
+.header__menu-item::after{
     content: '';
     display: block;
     width: 0px;
@@ -78,27 +77,27 @@ html {
     opacity: 0;
 }
 
-.item-about:hover:nth-of-type(1)::after{
+.header__menu-item:hover:nth-of-type(1)::after{
     width: 50px;
     opacity: 1;
 }   
 
-.item-about:hover:nth-of-type(2)::after{
+.header__menu-item:hover:nth-of-type(2)::after{
     width: 61px;
     opacity: 1;
 }  
 
-.item-about:hover:nth-of-type(3)::after{
+.header__menu-item:hover:nth-of-type(3)::after{
     width: 47px;
     opacity: 1;
 } 
 
-.item-about:hover:nth-of-type(4)::after{
+.header__menu-item:hover:nth-of-type(4)::after{
     width: 41px;
     opacity: 1;
 } 
 
-.item-about:hover:nth-of-type(5)::after{
+.header__menu-item:hover:nth-of-type(5)::after{
     width: 67px;
     opacity: 1;
 } 
@@ -157,6 +156,10 @@ html {
     margin-bottom: 0;
 }
 
+.services__articles-items{
+    cursor: pointer;
+}
+
 .services__articles-heading{
     font-family: Montserrat, Arial, Helvetica, sans-serif;
     color: #333333;
@@ -178,7 +181,6 @@ html {
 .services__articles-items::before{
     content: '';
     display: inline-block;
-    /* background-image: url(../img/icon-01.png); */
     width: 32px;
     height: 31px;
     float: left;
