@@ -233,7 +233,7 @@ html {
     text-align: center;
 }
 
-.cards{
+.cards-holder{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
