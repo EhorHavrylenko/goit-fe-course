@@ -397,7 +397,7 @@ input[type="text"]{
     padding-left: 12px;    
 }
 
-input[type="submit"]{
+.footer-button{
     width: 150px;
     height: 40px;
     background-color: #95e1d3;
