@@ -168,6 +168,7 @@ header{
     display: inline-block;
     width: 32px;
     height: 31px;
+    margin-right: 27px;
 }
 
 .services__articles-items:nth-of-type(1) .services__icon-holder{
@@ -249,12 +250,12 @@ header{
 }
 
 .photo-conteiner{
-    background-color: rgba(149, 225, 211, 0);
-    transition: background-color 200ms linear;
+    transition: box-shadow 200ms linear;
+    box-shadow: inset -10px -10px rgba(149, 225, 211, 0);
 }
 
 .cards__item:hover .photo-conteiner{
-    background-color:#95e1d3 ;
+    box-shadow: inset -10px -10px rgba(149, 225, 211);
 }
 
 .cards__photo{
@@ -302,8 +303,10 @@ header{
 
 .cards__item:hover::after{
     transform: translate(-10px,-10px); 
-    opacity: 1;  
+    opacity: 1;
 }
+
+
 
 /* ICONS */
 
