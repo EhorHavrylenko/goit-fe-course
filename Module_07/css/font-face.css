@@ -1,0 +1,71 @@
+
+@font-face {
+    font-family: 'Wisdom Script Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Wisdom Script Regular'), url('Wisdom Script AJ.woff') format('woff');
+    }
+
+@font-face {
+  font-family: 'Courgette';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Courgette Regular'), local('Courgette-Regular'),
+       url('../fonts/courgette-v7-latin-regular.woff2') format('woff2'), 
+       url('../fonts/courgette-v7-latin-regular.woff') format('woff')
+}    
+
+
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bitter Regular'), local('Bitter-Regular'),
+       url('../fonts/bitter-v15-latin-regular.woff2') format('woff2'),
+       url('../fonts/bitter-v15-latin-regular.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'MontserratRegular';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), 
+         url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); 
+    
+  }
+
+  @font-face {
+    font-family: 'MontserratBold';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), 
+         url('../fonts/montserrat-v14-latin-700.woff') format('woff');
+  }
+
+@font-face {
+    font-family: 'Noticia Text';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Noticia Text'), local('NoticiaText-Regular'),
+         url('../fonts/noticia-text-v9-latin-regular.woff2') format('woff2'), 
+         url('../fonts/noticia-text-v9-latin-regular.woff') format('woff');
+         
+  }
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Slab'), local('Roboto-Slab'),
+       url('../fonts/roboto-slab-v11-latin-regular.woff2') format('woff2'), 
+       url('../fonts/roboto-slab-v11-latin-regular.woff') format('woff')
+}
+
+@font-face {
+  font-family: 'PerrywoodW01-Regular'; 
+  src: 
+  url("//db.onlinewebfonts.com/t/df9c3ffda8d3efb6febca5188fc484db.woff2") format("woff2"), 
+  url("//db.onlinewebfonts.com/t/df9c3ffda8d3efb6febca5188fc484db.woff") format("woff")
+}

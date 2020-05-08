@@ -1,0 +1,243 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.wrapper{
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 44px;
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+  font-family: 'Wisdom Script Regular';
+  color: #fed23b;
+  font-size: 26px;
+}
+
+.menu__list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 485px;
+    list-style: none;
+}
+
+.menu__list-item{
+    font-family: 'MontserratRegular';
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 200ms linear;
+    color: #000;
+}
+
+.menu__list-item:hover{
+    color: #fed23b;
+}
+
+/* SERVICES */
+
+.serivces{
+    margin-top: 126px;
+    padding-bottom: 102px;
+}
+
+.section__head{
+    font-family: 'MontserratBold';
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.section-head-text{
+    font-family: 'PerrywoodW01-Regular'; 
+    font-style: italic;
+    color: #777777;
+    font-size: 20px;
+    text-align: center;
+}
+
+.services-blocks{
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-blocks__item{
+    width: 290px;
+    height: 206px;
+    cursor: pointer;
+}
+ 
+.services-blocks__item:before{
+    content: '';
+    border: 3px solid #fed23b;
+    border-radius: 50%;
+    width: 67px;
+    height: 67px;
+    display: block; 
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;  
+}
+
+.services-blocks__item:nth-of-type(1)::before{
+   background-image: url(../img/Icon-Basket-01.png);
+}
+
+.services-blocks__item:nth-of-type(2)::before{
+    background-image: url(../img/Icon-Laptop-02.png);
+ }
+
+.services-blocks__item:nth-of-type(3)::before{
+    background-image: url(../img/Icon-Locked-03.png);
+ } 
+
+.services__head{
+    color: #222222;
+    font-family: 'MontserratBold';
+    font-size: 18px;
+    text-align: center;
+    margin-top: 23px;
+    margin-bottom: 14px;
+}
+
+.services__item-text{
+    font-family: 'PerrywoodW01-Regular'; 
+    color: #777777;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* CONTACT */
+
+.contact{
+    width: 100vw;
+    height: 676px;
+    background-color: #222222;
+    padding-top: 110px;  
+    background-image: url(../img/Map_Image.png);
+    background-repeat: no-repeat;  
+    background-position: 99% 80%;
+}
+
+.contact-container{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.contact__head{
+    font-family: 'MontserratBold';
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 19px;
+    color: #ffffff;
+}
+
+.contact-form{
+    padding-top: 78px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.input-menu input{
+    width: 455px;
+    height: 50px;   
+    border: none;
+    border-radius: 4px;
+    padding-left: 15px;
+    font-family: 'MontserratBold';
+    color: #777272;
+    font-size: 16px;
+}
+
+input[type='email']{
+    margin: 30px 0;
+}
+
+.contact-form textarea{
+    width: 455px;
+    height: 210px;
+    resize: none;
+    border: none;
+    border-radius: 4px;
+    font-family: 'MontserratBold';
+    color: #777272;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 30px;
+    padding: 15px;
+    outline: none;
+}
+
+
+.contact-form input:focus{
+    outline: none;
+}
+
+input::placeholder {
+    font-family: 'MontserratBold';
+    color: #bbbbbb;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+
+textarea::placeholder {
+    font-family: 'MontserratBold';
+    color: #bbbbbb;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.contact-form button{
+    width: 240px;
+    height: 66px;
+    background-color: #fed136;
+    border: none;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-top: 29px;
+    font-family: 'MontserratBold';
+    color: #ffffff;  
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.input:invalid:focus{
+    border: 2px solid red;
+  }
+
+  .input:valid:focus{
+    border: 3px solid green;
+}
