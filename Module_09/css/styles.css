@@ -278,9 +278,11 @@ img{
         top: 170px;
     }
 
-    .header__text-holder{
-
-    }
+   .parther__head-holder{
+       width: 270px;
+       height: auto;
+       margin: 0 auto;
+   }
 
     .header__slogan{
         font-size: 29px;
