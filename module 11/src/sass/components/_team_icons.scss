@@ -1,0 +1,45 @@
+.icons-block{
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 87px);
+    z-index: 10;
+    top: 0%;
+    left: 0%;
+    transition: opacity 200ms linear;
+    opacity: 0;
+ }
+ 
+ .icons__list{
+    width: 224px;
+     height: 56px;
+     position: absolute;
+     top: 42%;
+     left: 48%;
+     transform: translate(-50%);
+ }
+ 
+ .icons__list-item{
+    width: 56px;
+    height: 56px;
+    float: left;
+    background-color: $color_gd_two;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        background-color: $color_gd_one;
+    }
+ }
+ 
+ .icons{
+     fill: $color_gd_one;
+     text-align: center;
+    &:hover{
+     fill: #ffffff;
+ }
+}
+
+ .cards__item:hover .icons-block{
+     opacity: 1;  
+ }
+ 

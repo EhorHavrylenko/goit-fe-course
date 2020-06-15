@@ -1,0 +1,131 @@
+header{
+    min-height: 1000px;
+    background-image: 
+    linear-gradient(
+        $color_gd_one,
+        $color_gd_two),
+    url(../../images/banner@1x.png);
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+
+.header__nav{
+display: flex;
+justify-content: space-between;
+margin-bottom: 146px;
+}
+
+.header__logo{
+    font-family: $font_Montserrat;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.header__menu{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    width: 490px;
+    height: 25px;
+
+}
+
+.header__menu-item{
+   color: #ffffff;
+   font-family: $font_Montserrat;
+   font-size: 14px;
+   font-weight: 400;
+   text-transform: uppercase;
+   text-decoration: none;
+   -webkit-transition: color 200ms linear;
+   -o-transition: color 200ms linear;
+   transition: color 200ms linear; 
+
+    &:hover{
+    color: $color_gd_two;
+    }
+    &::after{
+    content: '';
+    display: block;
+    width: 0px;
+    height: 3px;
+    background-color: $color_gd_two;
+    margin-top: 11px;
+    transition: width, opacity 200ms linear;
+    opacity: 0;
+    }
+    &:hover:nth-of-type(1)::after{
+    width: 50px;
+    opacity: 1;
+}   
+    &:hover:nth-of-type(2)::after{
+    width: 61px;
+    opacity: 1;
+}  
+    &:hover:nth-of-type(3)::after{
+    width: 47px;
+    opacity: 1;
+} 
+    &:hover:nth-of-type(4)::after{
+    width: 41px;
+    opacity: 1;
+} 
+    &:hover:nth-of-type(5)::after{
+    width: 67px;
+    opacity: 1;
+} 
+}
+
+.header__shop_card{
+    fill: #ffffff;
+    transition: 100ms linear;
+    &:hover{
+        fill: $color_gd_two;
+        transform: scale(1.2);
+    }
+}
+
+
+.header__heading-text{
+    font-size: 72px;
+    color: #ffffff;
+    font-family: $font_Kaushan;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 40px;
+  
+}
+
+.header__welcome-text{
+font-size: 150px;
+line-height: 140px;
+color: #ffffff;
+font-family: $font_Montserrat;
+font-weight: 700;
+text-transform: uppercase;
+text-align: center;
+margin-bottom: 120px;
+}
+
+.header__button{
+    width: 160px;
+    height: 40px;
+    margin: 0 auto;
+    display: block;
+    border: 3px solid white;
+    background-color: transparent;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: $font_Montserrat;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-top: 9px;
+    transition: 100ms linear;
+    &:hover{
+    transform: scale(1.1);
+    background-color: $color_gd_one;
+    }
+} 

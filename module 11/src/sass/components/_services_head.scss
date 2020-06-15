@@ -1,0 +1,31 @@
+.section__heading{
+    height: auto;
+}
+
+.section__heading-one{
+   font-family: $font_Kaushan;
+   color: #333333;
+   font-size: 24px;
+   font-weight: 400;
+   text-align: center;
+   margin-bottom: 22px;
+}
+
+.section__heading-two{
+   font-family: $font_Montserrat;
+   color: #333333;
+   font-size: 30px;
+   font-weight: 700;
+   text-transform: uppercase;
+   text-align: center;
+
+    &::after{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: $color_gd_one;
+    margin: 0 auto;
+    margin-top: 39px;
+}
+}
