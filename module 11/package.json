@@ -7,14 +7,14 @@
     "start": "cross-env PORT=1234 gulp start --development ",
     "build": "gulp build --production",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "master -d build"
   },
-  "homepage": "https://luxplanjay.github.io/gulp-starter-kit",
+  "homepage": "https://github.com/EhorHavrylenko/goit-fe-course.git",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/luxplanjay/gulp-starter-kit.git"
+    "url": "https://github.com/EhorHavrylenko/goit-fe-course.git"
   },
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Ehor havrylenko <thelazyjesus@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/luxplanjay/gulp-starter-kit/issues"
